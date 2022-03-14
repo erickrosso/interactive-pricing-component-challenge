@@ -39,20 +39,15 @@ range.addEventListener("input", function(){
 
 function desconto(){
     Object.keys(plan).forEach((x) => {
-        plan[x] = plan[x]/4
+        plan[x] = plan[x]-(plan[x]/4)
     });
-    range.attributes[2].value = 9;
-    range.attributes[1].value = 2;
+    range.attributes[2].value = 27;
+    range.attributes[1].value = 4;
     valor.innerHTML = range.value
 };
 
 function semDesconto() {
-    Object.keys(plan).forEach((x) => {
-        plan[x] = plan[x]*4
-    });
-    range.attributes[2].value = 36;
-    range.attributes[1].value = 8;
-    valor.innerHTML = range.value
+    location.reload()
 };
 
 
