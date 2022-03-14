@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(230, 100%, 99%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    max-width: 800px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.title {
+    color: hsl(227, 35%, 25%);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: hsl(225, 20%, 60%);
+    font-size: .8rem;
+}
+
+.main {
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.096);
+    margin-bottom: 10px;
+}
+
+.plano {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.view {
+    color: hsl(225, 20%, 60%);
+    font-size: .8rem;
+}
+
+.preco {
+    color: hsl(227, 35%, 25%);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.month {
+    color: hsl(225, 20%, 60%);
+    font-size: .7rem;
+}
+
+.selectPc {
+    display: flex;
+    justify-content: center;
+}
+
+#range {
+    appearance: none;
+    background: hsl(174, 77%, 80%);
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 100vh;
+    margin-bottom: 20px;
+}
+
+#range::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    background: hsl(174, 86%, 45%) url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(225, 20%, 60%);
+    font-size: .7rem;
+    margin-top: 20px;
+}
+
+.checkboxduo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: hsl(174, 77%, 80%);
+    padding: 5px;
+    width: 40px;
+    height: 20px;
+    border-radius: 100vh;
+}
+
+.radio {
+    appearance: none;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+}
+
+.radio:checked {
+    background-color: white;
+}
+
+.laranja {
+    background-color: hsl(14, 92%, 95%);
+    padding: 4px;
+    border-radius: 100vh;
+    color: hsl(15, 100%, 70%);
+}
+
+.confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.beneficios {
+    color: hsl(225, 20%, 60%);
+    font-size: .8rem;
+    line-height: 25px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    font-size: .6rem;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 100vh;
+    cursor: pointer;
+}
